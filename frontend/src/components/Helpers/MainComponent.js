@@ -6,5 +6,15 @@ export const PageContainer = styled.div`
 `
 
 export const PageTitle = styled.h1`
+    color: #FFF;
+`
+
+export const ErrorMessage = styled.div`
+    margin: 10px 0;
+    background-color: #FFCACA;
+    color: #000;
+    border: 2px solid #FF0000;
+    padding: 10px;
+    border-radius: 5px;
 
 `

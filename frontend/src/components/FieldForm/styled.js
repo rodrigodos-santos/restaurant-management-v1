@@ -4,7 +4,7 @@ export const LabelArea = styled.label`
     display: flex;
     align-items: center;
     padding: 10px;
-    max-width: 500px;
+    max-width: 900px;
 `
 export const Title = styled.div`
     width: 200px;
@@ -17,7 +17,7 @@ export const Input = styled.div`
     flex: 1;
 
     input{
-        width: ${props=>props.checkbox ? '' : '100%'};
+        width: ${props=>props.isCheckBox  ? '' : '70%'};
         font-size: 14px;
         padding: 5px;
         border: 1px solid #DDD;
@@ -32,7 +32,7 @@ export const Input = styled.div`
     }
     
     button{
-        background-color: #0089FF;
+        background-color: #015508;
         border: 0;
         outline: 0;
         padding: 5px 10px;
@@ -42,7 +42,7 @@ export const Input = styled.div`
         cursor: pointer;
 
         &:hover {
-            background-color: #006FCE
+            background-color: #001F02
         }
     }
 `

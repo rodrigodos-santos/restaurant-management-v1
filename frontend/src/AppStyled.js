@@ -23,7 +23,7 @@ export const Menu = styled.div`
     }
 `
 export const PageBody = styled.div`
-    background-color: #2c3e50;
+    background-color: #2C3E50;
     background: linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.40)) ,url('/assets/bg.png');
     flex:1
 `
