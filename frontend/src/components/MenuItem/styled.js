@@ -6,11 +6,11 @@ export const LinkArea = styled.a`
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: ${props=>props.active ? '#0B4D0B' : ''};
+    background-color: ${props=>props.active ? '#004305' : ''};
     border-radius: 10px;
     margin-right: 10px
 `
 export const LinkIcon = styled.img`
-    width:34px;
-    height:34px;
+    width:45px;
+    height:45px;
 `

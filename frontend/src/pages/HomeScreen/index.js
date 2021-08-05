@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import { Container, Titulo } from './styled';
+
+import { PageContainer, PageTitle } from '../../components/Helpers/MainComponent'
 
 export default () => {
     const history = useHistory();
@@ -10,9 +11,9 @@ export default () => {
     }
 
     return (
-        <Container>
-            <Titulo>Homepage</Titulo>
+        <PageContainer>
+            <PageTitle>Homepage</PageTitle>
             <button onClick={handleButtonClick}>Ir para Tela 2</button>
-        </Container>
+        </PageContainer>
     );
 }

@@ -3,6 +3,8 @@ import { useHistory, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Titulo } from './styled';
 
+import { PageContainer, PageTitle } from '../../components/Helpers/MainComponent'
+
 export default () => {
     const history = useHistory();
     const dispatch = useDispatch();
@@ -21,12 +23,12 @@ export default () => {
     }
 
     return (
-        <Container>
-            <Titulo>Tela2 de {nome}</Titulo>
+        <PageContainer>
+            <PageTitle>Tela2 de {nome}</PageTitle>
 
             <input type="text" value={name} onChange={handleTextChange} />
 
             <button onClick={()=>history.goBack()}>Voltar</button>
-        </Container>
+        </PageContainer>
     );
 }
