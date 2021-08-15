@@ -22,6 +22,7 @@ const apiFetchPost = async (endpoint, body) => {
 
     if(json.notallowed){
         window.location.href = '/login'
+        return
     }
 
     return json

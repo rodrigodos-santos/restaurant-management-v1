@@ -3,11 +3,11 @@ import { PageArea } from './styled'
 
 import FieldForm from '../../components/FieldForm'
 import { PageContainer, PageTitle, ErrorMessage } from '../../components/Helpers/MainComponent'
-import restautantAPI from '../../components/Helpers/RestaurantAPI'
+import RestautantAPI from '../../components/Helpers/RestaurantAPI'
 import { doLogin } from '../../components/Helpers/AuthHandler'
 
 export default () => {
-    const api = restautantAPI()
+    const api = RestautantAPI()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -27,6 +27,7 @@ export default () => {
             doLogin(json.token, rememberPassword) 
             window.location.href = '/'
         }
+        setDisabled(false)
     }
 
     return(
@@ -59,7 +60,7 @@ export default () => {
                         <input
                             type="checkbox"
                             disabled={disabled}
-                            value={rememberPassword}
+                            checked={rememberPassword}
                             onChange={()=>setRememberPassword(!rememberPassword)}
                         />
                     </FieldForm>
